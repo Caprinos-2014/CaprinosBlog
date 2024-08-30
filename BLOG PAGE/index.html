@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caprinos Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body background="Images/Background.png">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <img src="Images/caprinoslogo.png" alt="Caprinos Pizza" width="220" height="60">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="https://www.caprinospizza.co.uk/"><i class="fas fa-pizza-slice"></i>Order Online</a></li>
+                    <li><a href="https://www.caprinospizza.co.uk/contact"><i class="fas fa-envelope"></i>Contact Us</a></li>
+                    <li><a href="https://www.caprinospizza.co.uk/faqs"><i class="fas fa-question-circle"></i>FAQ's</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+   
+    <!-- Navigation Menu -->
+    <nav class="sections-nav">
+        <a href="https://www.caprinospizza.co.uk/categories/pizzas"><i class="fas fa-pizza-slice"></i>Pizzas</a>
+        <a href="https://sthelens.caprinospizza.co.uk/categories/sides_salads"><i class="fas fa-drumstick-bite"></i>Sides</a>
+        <a href="https://www.caprinospizza.co.uk/categories/deals"><i class="fas fa-tags"></i>Deals</a>
+        <a href="https://www.caprinospizza.co.uk/categories/wraps"><i class="fas fa-drumstick-bite"></i>Wraps</a>
+        <a href="https://www.caprinospizza.co.uk/categories/drinks"><i class="fas fa-cocktail"></i>Drinks</a>
+        <a href="https://www.caprinospizza.co.uk/categories/desserts"><i class="fas fa-ice-cream"></i>Desserts</a>
+        <a href="https://www.caprinospizza.co.uk/categories/milkshakes"><i class="fas fa-glass-whiskey"></i>Milkshakes</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <section class="blog-posts">
+            <div class="container grid-container">
+                <div class="post">
+                    <a href="post1.html">
+                        <img src="Images/100th Opening Image.png" alt="100th Opening image">
+                        <h3>100th Opening: Slice of Success</h3>
+                    </a>
+                    <p>Read about our milestone achievement</p>
+                    <a href ="post1.html"class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <a href="post2.html">
+                        <img src="Images/NewMenu.png" alt="New Menu">
+                        <h3>Going Global – It's Coming to You!</h3>
+                    </a>
+                    <p>Explore our global expansion plans...</p>
+                    <a href="post2.html" class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <a href="post3.html">
+                        <img src="Images/NewMenu.png" alt="Summer Menu">
+                        <h3>Dive into Our New Summer Menu!</h3>
+                    </a>
+                    <p>Discover the latest additions...</p>
+                    <a href="post3.html" class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <a href="post4.html">
+                        <img src="Images/100th Opening Image.png" alt="100th Opening">
+                        <h3>100th Opening: Slice of Success</h3>
+                    </a>
+                    <p>eheyjetthgheyety...</p>
+                    <a href="post4.html" class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <a href="post5.html">
+                        <img src="Images/NewMenu.png" alt="Going Global">
+                        <h3>Going Global – It's Coming to You!</h3>
+                    </a>
+                    <p>...</p>
+                    <a href="post5.html" class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <a href="page2.html">
+                        <img src="Images/Charity.png" alt="Charity Partnership">
+                        <h3>The Caprinos and Lia’s Wings Partnership</h3>
+                    </a>
+                    <p>...</p>
+                    <a href="post1.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+         <!-- <aside class="sidebar"></aside>
+        <div class="slider-container">
+            <img src="Images/100plus.png" alt="Image 1" style="width: 200px; height: 200px;">
+<img src="Images/100th Opening Image.png" alt="Image 2" style="width: 200px; height: 200px;">
+<img src="Images/100plus.png" alt="Image 3" style="width: 200px; height: 200px;">
+<img src="Images/Charity.png" alt="Image 4" style="width: 200px; height: 200px;">
+
+        </div>-->
+
+        <script>
+            // JavaScript to change images automatically in the slider
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slider-container img');
+            const totalImages = images.length;
+    
+            function showNextImage() {
+                images[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].style.display = 'block';
+            }
+    
+            setInterval(showNextImage, 4000);
+        </script>
+
+        <!-- Social Media Section -->
+        <aside class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/caprinospizza" class="social-icon facebook" aria-label="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/caprinospizza" class="social-icon twitter" aria-label="Twitter">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter">
+                </a>
+                
+                
+                <a href="https://www.instagram.com/caprinospizzaltd/?hl=en" class="social-icon instagram" aria-label="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/company/caprinospizza/mycompany/" class="social-icon linkedin" aria-label="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/channel/UCwpHQgG1H-UTLQ1RE05kdAw" class="social-icon youtube" aria-label="YouTube">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YouTube">
+                </a>
+                
+                <a href="https://www.tiktok.com/@caprinospizza?_t=8ZSYKOX7jQj&_r=1" class="social-icon tiktok" aria-label="TikTok">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/tiktok.png" alt="TikTok">
+                </a>
+                
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Caprinos Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="blogpage.js"></script>
+</body>
+</html>
