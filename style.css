@@ -264,18 +264,4 @@ body {
 }
 
 
-  /* Styles for all screens */
-body {
-  font-size: 16px;
-}
-
-/* Styles for screens narrower than 600px (mobile) */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  .header {
-    display: none; /* Hide the header on mobile */
-  }
-}     
-   
+ 
