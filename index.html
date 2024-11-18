@@ -199,7 +199,177 @@
                 }
             });
         });
+  <!-- Social Media Section (Commented Out) -->
+        <!--
+        <aside class="social-media">
+            ...
+        </aside>
+        -->
+    </div>
 
+    <!-- JavaScript -->
+    <script>
+        // Menu Toggle Script
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        // Sections Navigation Scroll Script
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        const nav = document.querySelector('.sections-nav');
+
+        if(leftArrow && rightArrow) { // Ensure arrows exist
+            leftArrow.addEventListener('click', () => {
+                nav.scrollBy({ left: -200, behavior: 'smooth' });
+            });
+
+            rightArrow.addEventListener('click', () => {
+                nav.scrollBy({ left: 200, behavior: 'smooth' });
+            });
+        }
+
+        // Read More Script
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const moreText = this.previousElementSibling;
+                if (moreText.style.display === "inline") {
+                    moreText.style.display = "none";
+                    this.textContent = "Read More";
+                } else {
+                    moreText.style.display = "inline";
+                    this.textContent = "Read Less";
+                }
+            });
+        });
+
+        
+    </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Feeds</title>
+<style>
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .social-media-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .social-media-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .social-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .social-media-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+  }
+  @media (max-width: 768px) {
+    iframe {
+      height: 250px;
+    }
+   
+  }
+</style>
+<style>
+    /* Default Styles (Desktop View) */
+    h2 {
+      font-size: 2rem; /* Large size for desktop */
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Mobile View Styles */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.2rem; /* Smaller size for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+<section class="social-media-section">
+  <h2>Follow Our Social Media for Latest Promotions and Offers</h2>
+  <div class="social-media-grid">
+    <!-- Facebook Embed -->
+    <div class="social-media-card">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcaprinospizza&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+
+    <!-- YouTube Embed -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
+        <!-- Playlist 1 -->
+        <div style="text-align: center;">
+          <a href="https://www.youtube.com/playlist?list=PLeuXj4IC4JIeCIJ5tXJ5l9Zq6lod2edVs" target="_blank">
+            <img src="https://img.youtube.com/vi/muu7HOS71dA/0.jpg" alt="Playlist Thumbnail" style="width: 300px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+          </a>
+          <p style="font-size: 16px; color: #333; margin-top: 10px;">Caprinos Pizza Specials</p>
+        </div>
+      
+        <!-- Add more playlists here -->
+      </div>
+      
+    <!-- Instagram Embed -->
+    <div class="social-media-card">
+      <blockquote 
+        class="instagram-media" 
+        data-instgrm-captioned 
+        data-instgrm-permalink="https://www.instagram.com/p/DAn1vast7Sd/?hl=en"
+        data-instgrm-version="14" 
+        style="background:#FFF; border:0; margin: 1px; max-width:540px; min-width:326px; padding:0; width:100%;">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+
+    <!-- TikTok Embed -->
+    <div class="social-media-card">
+        <blockquote 
+          class="tiktok-embed" 
+          cite="https://www.tiktok.com/@caprinospizza/video/7431947407929199904" 
+          data-video-id="7431947407929199904" 
+          style="max-width: 605px; min-width: 325px; margin: 0 auto;">
+          <section>
+            <a 
+              target="_blank" 
+              title="Caprinos Pizza on TikTok" 
+              href="https://www.tiktok.com/@caprinospizza/video/7431947407929199904">
+              Watch on TikTok
+            </a>
+          </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+  </div>
+</section>
         
     </script>
 
