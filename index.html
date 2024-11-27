@@ -46,7 +46,7 @@
                     <h4>100th Opening: Slice of Success</h4>
                     <p>
                         What began as a local favourite has now become a global sensation. A milestone in our journey of bringing people together over delicious pizza.
-                        <span class="more-text"> With our passion for quality and flavour fueling every slice we serve, we make sure it's JOY IN EACH SLICE. We have been crafting more than just a pizza – we have been creating memories. Here’s to the next 100 and beyond—because great pizza knows no borders.</span>
+                        <span class="more-text" style="display: none;"> With our passion for quality and flavour fueling every slice we serve, we make sure it's JOY IN EACH SLICE. We have been crafting more than just a pizza – we have been creating memories. Here’s to the next 100 and beyond—because great pizza knows no borders.</span>
                         <a href="#" class="read-more">Read More</a>
                     </p>
                 </div>
@@ -379,6 +379,21 @@
       </div>
   </div>
 </section>
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const moreText = this.previousElementSibling; // The span containing additional text
+                if (moreText.style.display === "none" || moreText.style.display === "") {
+                    moreText.style.display = "inline"; // Show the additional text
+                    this.textContent = "Read Less"; // Update button text
+                } else {
+                    moreText.style.display = "none"; // Hide the additional text
+                    this.textContent = "Read More"; // Revert button text
+                }
+            });
+        });
+    </script>
         
     </script>
 
